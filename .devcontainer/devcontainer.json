@@ -1,0 +1,36 @@
+// https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference
+{
+  "name": "NuxtTSVuetifyTemplate",
+  "extensions": [
+    // General
+    "editorconfig.editorconfig",
+    "codezombiech.gitignore",
+    "eamodio.gitlens",
+    // html
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    // Vue
+    "octref.vetur",
+    // Firebase
+    "toba.vsfire",
+    // ESLint
+    "dbaeumer.vscode-eslint"
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "eslint.validate": [
+      "javascript",
+      "typescript",
+      "vue",
+    ],
+    "vetur.format.defaultFormatter.html": "prettier"
+  },
+  "postCreateCommand": "apk add git bash && npm i -g firebase-tools",
+  // Docker-Compose
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app"
+}

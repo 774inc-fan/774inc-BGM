@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    image: node:10-alpine
+    tty: true
+    ports:
+      - 3000:3000
+      - 9005:9005
+    volumes:
+      - .:/app
+      - ~/.gitconfig:/root/.gitconfig
+    working_dir: /app
+    environment:
+      HOST: 0.0.0.0
