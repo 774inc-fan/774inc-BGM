@@ -39,7 +39,7 @@ export const groups = [
   },
   {
     text: 'その他',
-    members: ['reality']
+    members: ['other']
   },
   {
     text: '休止／引退',

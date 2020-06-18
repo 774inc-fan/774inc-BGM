@@ -233,6 +233,20 @@ export const songs = [
     memberId: 'wat_huma',
     list: []
   },
+  // その他
+  {
+    memberId: 'other',
+    list: [
+      {
+        tags: ['Reality'],
+        youtube: 'aQtIfqKEMyE'
+      },
+      {
+        tags: ['Reality'],
+        youtube: '6qEzh3wKVJc'
+      }
+    ]
+  },
   // 休止／引退
   {
     memberId: 'kuromu_inari',
@@ -255,17 +269,6 @@ export const songs = [
     list: [
       {
         youtube: 'Hn4Czfdmf5o'
-      }
-    ]
-  },
-  {
-    memberId: 'reality',
-    list: [
-      {
-        youtube: 'aQtIfqKEMyE'
-      },
-      {
-        youtube: '6qEzh3wKVJc'
       }
     ]
   }

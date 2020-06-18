@@ -25,7 +25,7 @@ export type IMemberKey =
   | 'anko_kisaki'
   | 'met_komori'
   | 'wat_huma'
-  | 'reality'
+  | 'other'
   | 'kuromu_inari'
   | 'eli_hnst'
   | 'hinako_umori'
@@ -133,8 +133,8 @@ export const members = [
     img: 'wat_huma.jpg'
   },
   {
-    id: 'reality',
-    text: 'Reality'
+    id: 'other',
+    text: 'その他'
   },
   {
     id: 'kuromu_inari',
