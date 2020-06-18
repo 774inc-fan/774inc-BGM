@@ -5,6 +5,7 @@ type IMember = {
 }
 
 export type IMemberKey =
+  // 有閑喫茶あにまーれ
   | 'haneru_inaba'
   | 'ichika_souya'
   | 'ran_hinokuma'
@@ -12,26 +13,32 @@ export type IMemberKey =
   | 'izumi_yunohara'
   | 'shiromiya_mimi'
   | 'natsumi_hashiba'
+  // ハニーストラップ
   | 'mico_hnst'
   | 'patra_hnst'
   | 'charlotte_hnst'
   | 'mary_hnst'
+  // シュガーリリック
   | 'rene_ryugasaki'
   | 'anna_kojo'
   | 'chrisshishio'
+  // ブイアパ
   | 'uge_and'
   | 'camomi_camomi'
   | '_kanade_kanon'
   | 'anko_kisaki'
   | 'met_komori'
   | 'wat_huma'
+  // その他
   | 'other'
+  // 休止／引退
   | 'kuromu_inari'
   | 'eli_hnst'
   | 'hinako_umori'
   | 'akane_haibara'
 
 export const members = [
+  // 有閑喫茶あにまーれ
   {
     id: 'haneru_inaba',
     text: '因幡はねる',
@@ -67,6 +74,7 @@ export const members = [
     text: '羽柴なつみ',
     img: 'natsumi_hashiba.jpg'
   },
+  // ハニーストラップ
   {
     id: 'mico_hnst',
     text: '堰代ミコ',
@@ -87,6 +95,7 @@ export const members = [
     text: '西園寺メアリ',
     img: 'mary_hnst.jpg'
   },
+  // シュガーリリック
   {
     id: 'rene_ryugasaki',
     text: '龍ケ崎リン',
@@ -102,6 +111,7 @@ export const members = [
     text: '獅子王クリス',
     img: 'chrisshishio.jpg'
   },
+  // ブイアパ
   {
     id: 'uge_and',
     text: '安戸ゆげ',
@@ -132,10 +142,12 @@ export const members = [
     text: '不磨わっと',
     img: 'wat_huma.jpg'
   },
+  // その他
   {
     id: 'other',
     text: 'その他'
   },
+  // 休止／引退
   {
     id: 'kuromu_inari',
     text: '稲荷くろむ',
