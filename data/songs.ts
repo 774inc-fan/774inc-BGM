@@ -244,6 +244,10 @@ export const songs = [
       {
         tags: ['Reality'],
         youtube: '6qEzh3wKVJc'
+      },
+      {
+        tags: ['名取さな'],
+        youtube: 'wpwo7CfZ0nQ'
       }
     ]
   },
