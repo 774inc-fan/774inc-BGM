@@ -3,7 +3,7 @@
     <v-app-bar app clipped-left elevation="1" color="primary">
       <v-app-bar-nav-icon @click="state.drawer = !state.drawer" />
       <v-toolbar-title>
-        774inc 曲一覧
+        ななしソング
       </v-toolbar-title>
     </v-app-bar>
     <v-navigation-drawer v-model="state.drawer" app clipped>
