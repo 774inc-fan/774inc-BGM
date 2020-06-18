@@ -2,9 +2,7 @@
   <v-container>
     <v-row>
       <v-col>
-        <v-alert type="error">
-          [{{ error.statusCode }}] {{ error.message }}
-        </v-alert>
+        <v-alert type="error"> [{{ statusCode }}] {{ message }} </v-alert>
       </v-col>
     </v-row>
   </v-container>
@@ -21,8 +19,22 @@ export default defineComponent({
     }
   },
   setup({ error }) {
+    const statusCode = error.statusCode
+    const message = (() => {
+      if (typeof error.message !== 'undefined') {
+        return error.message
+      }
+      switch (statusCode) {
+        case 404:
+          return 'ページが見つかりませんでした'
+        default:
+          return '何らかのエラーが発生しました'
+      }
+    })()
+
     return {
-      error
+      statusCode,
+      message
     }
   }
 })
