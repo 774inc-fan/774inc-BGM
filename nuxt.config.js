@@ -30,7 +30,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/composition-api', '@/plugins/firebase'],
+  plugins: ['@/plugins/composition-api'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -42,16 +42,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    [
-      '@nuxtjs/dotenv',
-      {
-        path: './config/',
-        filename: process.env.NODE_ENV !== 'production' ? '.env' : '.env'
-      }
-    ]
-  ],
+  modules: [],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module

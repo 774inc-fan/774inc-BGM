@@ -1,6 +1,6 @@
 // https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference
 {
-  "name": "NuxtTSVuetifyTemplate",
+  "name": "774inc-Song",
   "extensions": [
     // General
     "editorconfig.editorconfig",
@@ -28,7 +28,7 @@
     ],
     "vetur.format.defaultFormatter.html": "prettier"
   },
-  "postCreateCommand": "apk add git bash && npm i -g firebase-tools",
+  "postCreateCommand": "apk add git bash",
   // Docker-Compose
   "dockerComposeFile": "../docker-compose.yml",
   "service": "app",
