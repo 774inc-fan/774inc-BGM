@@ -19,6 +19,12 @@ export const songs = [
       {
         tags: ['VakaTuber決戦', 'カチコミBGM'],
         youtube: '7iz4Sf6NGjo'
+      },
+      {
+        youtube: 'rNsjKMSVg1Q'
+      },
+      {
+        youtube: 'C2gxSXuo4uQ'
       }
     ]
   },
@@ -74,6 +80,10 @@ export const songs = [
       {
         tags: ['初配信'],
         youtube: 'GJJuYze3A8k'
+      },
+      {
+        tags: ['初期OP曲'],
+        youtube: '4_5xXFsFmSc'
       },
       {
         tags: ['（どこで使ってるっけ）'],
@@ -265,6 +275,10 @@ export const songs = [
     list: [
       {
         youtube: 'jM1q8ekc9JQ'
+      },
+      {
+        tags: ['待機'],
+        youtube: 'R97YidHjmA4'
       }
     ]
   },
