@@ -32,6 +32,9 @@
               <v-list-item-content>
                 {{ item.text }}
               </v-list-item-content>
+              <v-list-item-action-text>
+                {{ item.count }}
+              </v-list-item-action-text>
             </v-list-item>
           </v-list-item-group>
         </v-list>
@@ -45,15 +48,21 @@
 
 <script lang="ts">
 import { reactive, defineComponent } from '@vue/composition-api'
+import { groups } from '@@/data/groups'
+import { members } from '@@/data/members'
+import { songs } from '@@/data/songs'
 
-interface IDrawerList {
+type IDrawerList = {
   subheader?: string
-  items: {
-    text: string
-    to: string
-    icon?: string
-    img?: string
-  }[]
+  items: IDrawerListItem[]
+}
+
+type IDrawerListItem = {
+  text: string
+  to: string
+  icon?: string
+  img?: string
+  count?: number
 }
 
 export default defineComponent({
@@ -62,11 +71,23 @@ export default defineComponent({
       drawer: null
     })
 
-    const drawerList = [
-      {
-        items: [{ text: 'ホーム', to: '/', icon: 'mdi-home' }]
-      }
-    ] as IDrawerList[]
+    const drawerList = groups.map((group) => {
+      return {
+        subheader: group.text,
+        items: group.members.map((memberId) => {
+          const member = members.filter((i) => i.id === memberId)[0]
+          return {
+            text: member.text,
+            to: `/v/${member.id}`,
+            img: `/images/${member.img}`,
+            count: songs.filter((i) => i.memberId === member.id)[0].list.length
+          } as IDrawerListItem
+        })
+      } as IDrawerList
+    }) as IDrawerList[]
+    drawerList.unshift({
+      items: [{ text: 'ホーム', to: '/', icon: 'mdi-home' }]
+    })
 
     return {
       state,
