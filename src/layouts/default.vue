@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app clipped-left elevation="1" color="primary">
+    <v-app-bar app clipped-left elevation="1" color="primary" dark>
       <v-app-bar-nav-icon @click="state.drawer = !state.drawer" />
       <v-toolbar-title>
         ななしソング
