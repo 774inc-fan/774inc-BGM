@@ -84,10 +84,6 @@ export const songs = [
       {
         tags: ['初期OP曲'],
         youtube: '4_5xXFsFmSc'
-      },
-      {
-        tags: ['（どこで使ってるっけ）'],
-        youtube: '9oSBQLdw4-E'
       }
     ]
   },
