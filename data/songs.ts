@@ -17,14 +17,14 @@ export const songs = [
     memberId: 'haneru_inaba',
     list: [
       {
-        tags: ['VakaTuber決戦', 'カチコミBGM'],
-        youtube: '7iz4Sf6NGjo'
-      },
-      {
         youtube: 'rNsjKMSVg1Q'
       },
       {
         youtube: 'C2gxSXuo4uQ'
+      },
+      {
+        tags: ['VakaTuber決戦', 'カチコミBGM'],
+        youtube: '7iz4Sf6NGjo'
       }
     ]
   },
