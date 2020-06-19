@@ -194,7 +194,12 @@ export const songs = [
   },
   {
     memberId: 'chrisshishio',
-    list: []
+    list: [
+      {
+        tags: ['クリスチャンス'],
+        youtube: '6kUUVGXcbW0'
+      }
+    ]
   },
   // ブイアパ
   {
