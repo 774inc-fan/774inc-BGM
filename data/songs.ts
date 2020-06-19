@@ -118,6 +118,9 @@ export const songs = [
     memberId: 'kuku_kazami',
     list: [
       {
+        youtube: '9bYPpAEgCzo'
+      },
+      {
         tags: ['スパチャ返し'],
         youtube: 'w4s60v2FFfs'
       }
