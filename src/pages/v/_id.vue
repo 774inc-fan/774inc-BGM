@@ -1,5 +1,15 @@
 <template>
   <v-container>
+    <v-row>
+      <v-col>
+        <v-banner>
+          <v-avatar>
+            <v-img :src="`/images/${details.img}`" />
+          </v-avatar>
+          {{ details.text }}
+        </v-banner>
+      </v-col>
+    </v-row>
     <v-row v-if="member.list.length !== 0">
       <v-col
         v-for="(item, i) in member.list"
@@ -80,6 +90,7 @@
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
+import { members } from '@@/data/members'
 import { songs } from '@@/data/songs'
 
 export default defineComponent({
@@ -87,9 +98,13 @@ export default defineComponent({
     const member = songs.filter(
       (member) => member.memberId === $route.params.id
     )[0]
+    const details = members.filter(
+      (member) => member.id === $route.params.id
+    )[0]
 
     return {
-      member
+      member,
+      details
     }
   }
 })
