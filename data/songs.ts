@@ -160,6 +160,10 @@ export const songs = [
       {
         tags: ['朝配信'],
         youtube: 'b7OyyndTPVg'
+      },
+      {
+        tags: ['収益化配信'],
+        youtube: 'JofDLAhBMf4'
       }
     ]
   },
