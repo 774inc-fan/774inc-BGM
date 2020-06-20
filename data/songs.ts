@@ -155,6 +155,9 @@ export const songs = [
         youtube: 'bJxIo_beMjg'
       },
       {
+        youtube: 'OtPeKoNp6us'
+      },
+      {
         tags: ['朝配信'],
         youtube: 'b7OyyndTPVg'
       }
