@@ -158,6 +158,9 @@ export const songs = [
         youtube: 'OtPeKoNp6us'
       },
       {
+        youtube: 'VZOyCmiSMmI'
+      },
+      {
         tags: ['朝配信'],
         youtube: 'b7OyyndTPVg'
       },
