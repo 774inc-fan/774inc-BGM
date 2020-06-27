@@ -19,16 +19,19 @@
         </h2>
         <p>
           GitHub上で公開しています。レポジトリは
-          <a href="https://github.com/ozelotjp/VTA-774inc-Song">ozelotjp/VTA-774inc-Song</a>
+          <a href="https://github.com/ozelotjp/VTA-774inc-Song">
+            ozelotjp/VTA-774inc-Song
+          </a>
           です。
         </p>
         <h2>
           提案・指摘・その他お問い合わせ
         </h2>
         <p>
-          オセロット（
-          <a href="https://twitter.com/ozelotjp_v">@ozelotjp_v</a>
-          ）まで連絡ください。
+          <a href="https://twitter.com/ozelotjp_v">
+            オセロット（@ozelotjp_v）
+          </a>
+          まで連絡ください。
         </p>
         <h2>
           メモ
