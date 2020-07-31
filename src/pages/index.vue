@@ -19,8 +19,8 @@
         </h2>
         <p>
           GitHub上で公開しています。レポジトリは
-          <a href="https://github.com/ozelotjp/VTA-774inc-Song">
-            ozelotjp/VTA-774inc-Song
+          <a href="https://github.com/ozelotjp/774inc-BGM">
+            ozelotjp/774inc-BGM
           </a>
           です。
         </p>
