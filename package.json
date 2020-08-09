@@ -1,5 +1,5 @@
 {
-  "name": "nuxtts-template",
+  "name": "774inc-bgm",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
@@ -23,12 +23,9 @@
     "@nuxt/types": "^2.14.1",
     "@nuxt/typescript-build": "^2.0.2",
     "@nuxt/typescript-runtime": "^1.0.0",
-    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/vuetify": "^1.11.2",
-    "firebase": "^7.17.2",
     "nuxt": "^2.14.1",
-    "nuxt-composition-api": "^0.11.0",
-    "vuex-module-decorators": "^0.17.0"
+    "nuxt-composition-api": "^0.11.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",

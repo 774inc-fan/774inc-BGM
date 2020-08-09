@@ -41,7 +41,7 @@ const config: NuxtConfig = {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['@/plugins/firebase'],
+  plugins: [],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -56,19 +56,6 @@ const config: NuxtConfig = {
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
-  ],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    [
-      '@nuxtjs/dotenv',
-      {
-        path: './config/',
-        filename: process.env.NODE_ENV !== 'production' ? '.env' : '.env',
-      },
-    ],
   ],
   /*
    ** Build configuration
