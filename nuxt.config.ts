@@ -62,6 +62,9 @@ const config: NuxtConfig = {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  generate: {
+    fallback: true,
+  },
   typescript: {
     typeCheck: {
       eslint: {
