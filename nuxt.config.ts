@@ -49,6 +49,10 @@ const config: NuxtConfig = {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
+  generate: {
+    fallback: true,
+  },
+
   // TypeScript Configuration (https://typescript.nuxtjs.org/guide/lint.html#configuration)
   typescript: {
     typeCheck: {
