@@ -9,7 +9,6 @@
     "octref.vetur",
     // Html
     "formulahendry.auto-rename-tag",
-    "formulahendry.auto-close-tag",
     // Vuetify
     "vuetifyjs.vuetify-vscode",
     // Firebase

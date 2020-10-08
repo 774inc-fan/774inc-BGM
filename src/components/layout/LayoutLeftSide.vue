@@ -38,7 +38,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from 'nuxt-composition-api'
+import { defineComponent, computed, ref } from '@nuxtjs/composition-api'
 import { groups as groupsData } from '@@/data/groups'
 import { members as membersData } from '@@/data/members'
 import { musics as musicsData } from '@@/data/musics'

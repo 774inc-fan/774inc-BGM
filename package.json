@@ -4,10 +4,10 @@
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
-    "generate": "nuxt-ts generate",
     "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --cache .",
-    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore --cache",
+    "lint:style": "stylelint **/*.{ts,vue,css} --ignore-path .gitignore --cache",
     "lint": "npm run lint:js && npm run lint:style"
   },
   "lint-staged": {
@@ -16,31 +16,35 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
   "dependencies": {
-    "@nuxt/types": "^2.14.1",
-    "@nuxt/typescript-build": "^2.0.2",
-    "@nuxt/typescript-runtime": "^1.0.0",
+    "@nuxt/types": "^2.14.6",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/composition-api": "^0.12.5",
     "@nuxtjs/vuetify": "^1.11.2",
-    "nuxt": "^2.14.1",
-    "nuxt-composition-api": "^0.11.0"
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-config-typescript": "^3.0.0",
-    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/eslint-module": "^3.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.6.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5",
-    "stylelint": "^13.6.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0"
   }
