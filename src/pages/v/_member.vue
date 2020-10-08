@@ -33,9 +33,7 @@
               </v-chip>
             </v-chip-group>
             <v-chip-group v-else>
-              <v-chip label>
-                （タグなし）
-              </v-chip>
+              <v-chip label>（タグなし）</v-chip>
             </v-chip-group>
             <v-spacer />
             <v-btn
@@ -44,9 +42,7 @@
               icon
               :href="music.source"
             >
-              <v-icon>
-                mdi-web
-              </v-icon>
+              <v-icon>mdi-web</v-icon>
             </v-btn>
             <v-btn
               v-if="typeof music.youtube !== 'undefined'"
@@ -54,9 +50,7 @@
               icon
               :href="`https://youtu.be/${music.youtube}`"
             >
-              <v-icon>
-                mdi-youtube
-              </v-icon>
+              <v-icon>mdi-youtube</v-icon>
             </v-btn>
           </v-card-title>
           <v-card-text>
@@ -73,13 +67,9 @@
     <v-row v-if="musics.length === 0">
       <v-col>
         <v-alert type="warning">
-          <p>
-            すみません、まだ情報がありません…よかったら教えて下さい！
-          </p>
+          <p>すみません、まだ情報がありません…よかったら教えて下さい！</p>
           <v-btn href="https://twitter.com/ozelotjp_v">
-            <v-icon left>
-              mdi-twitter
-            </v-icon>
+            <v-icon left>mdi-twitter</v-icon>
             ozelotjp_v
           </v-btn>
         </v-alert>
