@@ -32,6 +32,12 @@ export const musics = [
     memberId: 'ichika_souya',
     list: [
       {
+        youtube: 'pgjwcEpjhKE',
+      },
+      {
+        youtube: 'R6tSdHM6GKU',
+      },
+      {
         youtube: '2hZGLVkdjRA',
       },
       {
@@ -91,6 +97,9 @@ export const musics = [
     memberId: 'ran_hinokuma',
     list: [
       {
+        youtube: 'S-bErFZ5bpo',
+      },
+      {
         youtube: '5tuhiMYovPY',
       },
       {
@@ -143,6 +152,10 @@ export const musics = [
         youtube: 'Hn4Czfdmf5o',
       },
       {
+        tags: ['料理'],
+        youtube: 'YWiUeQibq6k',
+      },
+      {
         tags: ['ED'],
         youtube: 'CXz3SVvZiPc',
       },
@@ -151,6 +164,9 @@ export const musics = [
   {
     memberId: 'natsumi_hashiba',
     list: [
+      {
+        youtube: 'xO26nUocp-M',
+      },
       {
         youtube: 'bJxIo_beMjg',
       },
@@ -194,7 +210,12 @@ export const musics = [
   },
   {
     memberId: 'charlotte_hnst',
-    list: [],
+    list: [
+      {
+        tags: ['Minecraft'],
+        youtube: '2kWuQz9sdfI',
+      },
+    ],
   },
   {
     memberId: 'mary_hnst',
@@ -222,6 +243,9 @@ export const musics = [
   {
     memberId: 'uge_and',
     list: [
+      {
+        youtube: 'Y7Zu2IruAq4',
+      },
       {
         youtube: 'Mx2fNRAD6oI',
       },
