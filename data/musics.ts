@@ -177,6 +177,9 @@ export const musics = [
         youtube: 'VZOyCmiSMmI',
       },
       {
+        youtube: 'zf5vqokL6So',
+      },
+      {
         tags: ['朝配信'],
         youtube: 'b7OyyndTPVg',
       },
