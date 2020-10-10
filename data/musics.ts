@@ -170,6 +170,14 @@ export const musics = [
       },
     ],
   },
+  {
+    memberId: 'rui_seshima',
+    list: [],
+  },
+  {
+    memberId: 'hikari_hira',
+    list: [],
+  },
   // ハニーストラップ
   {
     memberId: 'mico_hnst',

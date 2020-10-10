@@ -16,6 +16,8 @@ export const groups = [
       'izumi_yunohara',
       'shiromiya_mimi',
       'natsumi_hashiba',
+      'rui_seshima',
+      'hikari_hira',
     ],
   },
   {

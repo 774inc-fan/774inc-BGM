@@ -74,6 +74,16 @@ export const members = [
     name: '羽柴なつみ',
     img: 'natsumi_hashiba.jpg',
   },
+  {
+    id: 'rui_seshima',
+    name: '瀬島るい',
+    img: 'rui_seshima.jpg',
+  },
+  {
+    id: 'hikari_hira',
+    name: '飛良ひかり',
+    img: 'hikari_hira.jpg',
+  },
   // ハニーストラップ
   {
     id: 'mico_hnst',
