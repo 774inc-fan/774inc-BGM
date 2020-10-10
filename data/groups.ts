@@ -30,7 +30,6 @@ export const groups = [
     name: 'ブイアパ',
     members: [
       'uge_and',
-      'camomi_camomi',
       '_kanade_kanon',
       'anko_kisaki',
       'met_komori',
@@ -43,6 +42,12 @@ export const groups = [
   },
   {
     name: '休止／引退',
-    members: ['kuromu_inari', 'eli_hnst', 'hinako_umori', 'akane_haibara'],
+    members: [
+      'kuromu_inari',
+      'eli_hnst',
+      'hinako_umori',
+      'akane_haibara',
+      'camomi_camomi',
+    ],
   },
 ] as Group[]

@@ -24,7 +24,6 @@ export type MemberKey =
   | 'chrisshishio'
   // ブイアパ
   | 'uge_and'
-  | 'camomi_camomi'
   | '_kanade_kanon'
   | 'anko_kisaki'
   | 'met_komori'
@@ -36,6 +35,7 @@ export type MemberKey =
   | 'eli_hnst'
   | 'hinako_umori'
   | 'akane_haibara'
+  | 'camomi_camomi'
 
 export const members = [
   // 有閑喫茶あにまーれ
@@ -118,11 +118,6 @@ export const members = [
     img: 'uge_and.jpg',
   },
   {
-    id: 'camomi_camomi',
-    name: '鴨見カモミ',
-    img: 'camomi_camomi.jpg',
-  },
-  {
     id: '_kanade_kanon',
     name: '花奏かのん',
     img: '_kanade_kanon.jpg',
@@ -167,5 +162,10 @@ export const members = [
     id: 'akane_haibara',
     name: '灰原あかね',
     img: 'akane_haibara.jpg',
+  },
+  {
+    id: 'camomi_camomi',
+    name: '鴨見カモミ',
+    img: 'camomi_camomi.jpg',
   },
 ] as Member[]

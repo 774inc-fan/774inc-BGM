@@ -224,10 +224,6 @@ export const musics = [
     ],
   },
   {
-    memberId: 'camomi_camomi',
-    list: [],
-  },
-  {
     memberId: '_kanade_kanon',
     list: [
       {
@@ -306,5 +302,9 @@ export const musics = [
         youtube: 'Hn4Czfdmf5o',
       },
     ],
+  },
+  {
+    memberId: 'camomi_camomi',
+    list: [],
   },
 ] as Music[]
