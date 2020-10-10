@@ -253,8 +253,19 @@ export const musics = [
         youtube: 'Mx2fNRAD6oI',
       },
       {
+        youtube: 'fkdrPZPXu_o',
+      },
+      {
         tags: ['OP'],
         youtube: 'x_g0Y7bkwsI',
+      },
+      {
+        tags: ['OP'],
+        youtube: 'kHZGsL8sV2Q',
+      },
+      {
+        tags: ['AFK'],
+        youtube: 'pepiUg_zXWs',
       },
     ],
   },
