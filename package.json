@@ -27,7 +27,7 @@
     "@nuxtjs/composition-api": "^0.12.6",
     "@nuxtjs/vuetify": "^1.11.2",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
