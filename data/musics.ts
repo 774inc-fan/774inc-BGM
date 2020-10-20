@@ -80,6 +80,10 @@ export const musics = [
         youtube: '7kuQFPn3uc8',
       },
       {
+        tags: ['バイノーラル'],
+        youtube: 'hTpmFIwhx9s',
+      },
+      {
         tags: ['恋するVTuber OP'],
         youtube: 'CdiJE_tMdVc',
       },
