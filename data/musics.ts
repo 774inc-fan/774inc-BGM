@@ -44,6 +44,9 @@ export const musics = [
         youtube: 'eo7w_Pnctvg',
       },
       {
+        youtube: 'aYKOc3-HOhg',
+      },
+      {
         tags: ['待機'],
         youtube: 'MkZSSPHp3LM',
       },
