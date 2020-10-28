@@ -32,6 +32,9 @@ export const musics = [
     memberId: 'ichika_souya',
     list: [
       {
+        youtube: 'SkQihFHiWt0',
+      },
+      {
         youtube: 'pgjwcEpjhKE',
       },
       {
