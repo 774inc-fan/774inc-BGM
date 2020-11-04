@@ -1,9 +1,9 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "schedule:weekly"
   ],
   "timezone": "Asia/Tokyo",
-  "schedule": ["every weekend"],
   "automerge": true,
   "vulnerabilityAlerts": {
     "enabled": true
