@@ -237,7 +237,18 @@ export const musics = [
   // シュガーリリック
   {
     memberId: 'rene_ryugasaki',
-    list: [],
+    list: [
+      {
+        tags: ['事件簿'],
+        youtube: 'elZZpZCes48',
+      },
+      {
+        youtube: 'g58eY1th86Y',
+      },
+      {
+        youtube: 'r65mQAq78No',
+      },
+    ],
   },
   {
     memberId: 'anna_kojo',
