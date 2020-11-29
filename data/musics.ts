@@ -175,6 +175,9 @@ export const musics = [
     memberId: 'natsumi_hashiba',
     list: [
       {
+        youtube: 'aYKOc3-HOhg',
+      },
+      {
         youtube: 'xO26nUocp-M',
       },
       {
