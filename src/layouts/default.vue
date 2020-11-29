@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <LayoutHeader @toggleDrawer="toggleDrawer" />
+    <LayoutHeader @toggle-drawer="toggleDrawer" />
     <LayoutLeftSide ref="LayoutLeftSide" />
     <v-main>
       <nuxt />
