@@ -21,13 +21,13 @@
     }
   },
   "dependencies": {
-    "@nuxt/types": "2.14.9",
+    "@nuxt/types": "2.14.11",
     "@nuxt/typescript-build": "2.0.3",
     "@nuxt/typescript-runtime": "2.0.0",
     "@nuxtjs/composition-api": "0.16.4",
     "@nuxtjs/vuetify": "1.11.2",
     "core-js": "3.8.1",
-    "nuxt": "2.14.9"
+    "nuxt": "2.14.11"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
