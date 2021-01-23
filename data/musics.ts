@@ -1,4 +1,4 @@
-import { MemberKey } from '@@/data/members'
+import { MemberKey } from 'data/members'
 
 export type Music = {
   memberId: MemberKey
@@ -17,198 +17,198 @@ export const musics = [
     memberId: 'haneru_inaba',
     list: [
       {
-        youtube: 'rNsjKMSVg1Q',
+        youtube: 'rNsjKMSVg1Q'
       },
       {
-        youtube: 'C2gxSXuo4uQ',
+        youtube: 'C2gxSXuo4uQ'
       },
       {
         tags: ['VakaTuber決戦', 'カチコミBGM'],
-        youtube: '7iz4Sf6NGjo',
-      },
-    ],
+        youtube: '7iz4Sf6NGjo'
+      }
+    ]
   },
   {
     memberId: 'ichika_souya',
     list: [
       {
-        youtube: 'SkQihFHiWt0',
+        youtube: 'SkQihFHiWt0'
       },
       {
-        youtube: 'pgjwcEpjhKE',
+        youtube: 'pgjwcEpjhKE'
       },
       {
-        youtube: 'R6tSdHM6GKU',
+        youtube: 'R6tSdHM6GKU'
       },
       {
-        youtube: '2hZGLVkdjRA',
+        youtube: '2hZGLVkdjRA'
       },
       {
-        youtube: 'eo7w_Pnctvg',
+        youtube: 'eo7w_Pnctvg'
       },
       {
-        youtube: 'aYKOc3-HOhg',
+        youtube: 'aYKOc3-HOhg'
       },
       {
         tags: ['待機'],
-        youtube: 'MkZSSPHp3LM',
+        youtube: 'MkZSSPHp3LM'
       },
       {
         tags: ['昔使ってた'],
-        youtube: '1FCjU-V9FDs',
+        youtube: '1FCjU-V9FDs'
       },
       {
         tags: ['りしーゆー！'],
-        youtube: '9swXEd6SWjA',
+        youtube: '9swXEd6SWjA'
       },
       {
         tags: ['朝配信 待機'],
-        youtube: 'pKMGBSxHLsg',
+        youtube: 'pKMGBSxHLsg'
       },
       {
         tags: ['朝配信 OP'],
-        youtube: 'I0xCR0RfUoM',
+        youtube: 'I0xCR0RfUoM'
       },
       {
         tags: ['朝配信'],
-        youtube: 'n4zl8LKKSp8',
+        youtube: 'n4zl8LKKSp8'
       },
       {
         tags: ['朝配信'],
-        youtube: '2KzkWWkPSpU',
+        youtube: '2KzkWWkPSpU'
       },
       {
         tags: ['朝配信'],
-        youtube: '4pqJA7aiVJc',
+        youtube: '4pqJA7aiVJc'
       },
       {
         tags: ['バイノーラル'],
-        youtube: '7kuQFPn3uc8',
+        youtube: '7kuQFPn3uc8'
       },
       {
         tags: ['バイノーラル'],
-        youtube: 'hTpmFIwhx9s',
+        youtube: 'hTpmFIwhx9s'
       },
       {
         tags: ['恋するVTuber OP'],
-        youtube: 'CdiJE_tMdVc',
+        youtube: 'CdiJE_tMdVc'
       },
       {
         tags: ['初配信'],
-        youtube: 'GJJuYze3A8k',
+        youtube: 'GJJuYze3A8k'
       },
       {
         tags: ['初期OP曲'],
-        youtube: '4_5xXFsFmSc',
-      },
-    ],
+        youtube: '4_5xXFsFmSc'
+      }
+    ]
   },
   {
     memberId: 'ran_hinokuma',
     list: [
       {
-        youtube: 'S-bErFZ5bpo',
+        youtube: 'S-bErFZ5bpo'
       },
       {
-        youtube: '5tuhiMYovPY',
+        youtube: '5tuhiMYovPY'
       },
       {
-        youtube: 'bogzWYYz91U',
-      },
-      {
-        tags: ['料理配信'],
-        youtube: 'RT0KL9ovwuw',
+        youtube: 'bogzWYYz91U'
       },
       {
         tags: ['料理配信'],
-        youtube: '-Df1VcAMjtM',
+        youtube: 'RT0KL9ovwuw'
+      },
+      {
+        tags: ['料理配信'],
+        youtube: '-Df1VcAMjtM'
       },
       {
         tags: ['らん太郎死す'],
-        youtube: 'D-IwLexmQh0',
-      },
-    ],
+        youtube: 'D-IwLexmQh0'
+      }
+    ]
   },
   {
     memberId: 'kuku_kazami',
     list: [
       {
-        youtube: '9bYPpAEgCzo',
+        youtube: '9bYPpAEgCzo'
       },
       {
         tags: ['スパチャ返し'],
-        youtube: 'w4s60v2FFfs',
-      },
-    ],
+        youtube: 'w4s60v2FFfs'
+      }
+    ]
   },
   {
     memberId: 'izumi_yunohara',
     list: [
       {
-        youtube: '723NjKyD_L8',
+        youtube: '723NjKyD_L8'
       },
       {
-        youtube: 'Y7Zu2IruAq4',
+        youtube: 'Y7Zu2IruAq4'
       },
       {
-        youtube: 'p1O7tSN5_Co',
-      },
-    ],
+        youtube: 'p1O7tSN5_Co'
+      }
+    ]
   },
   {
     memberId: 'shiromiya_mimi',
     list: [
       {
-        youtube: 'Hn4Czfdmf5o',
+        youtube: 'Hn4Czfdmf5o'
       },
       {
         tags: ['料理'],
-        youtube: 'YWiUeQibq6k',
+        youtube: 'YWiUeQibq6k'
       },
       {
         tags: ['ED'],
-        youtube: 'CXz3SVvZiPc',
-      },
-    ],
+        youtube: 'CXz3SVvZiPc'
+      }
+    ]
   },
   {
     memberId: 'natsumi_hashiba',
     list: [
       {
-        youtube: 'aYKOc3-HOhg',
+        youtube: 'aYKOc3-HOhg'
       },
       {
-        youtube: 'xO26nUocp-M',
+        youtube: 'xO26nUocp-M'
       },
       {
-        youtube: 'bJxIo_beMjg',
+        youtube: 'bJxIo_beMjg'
       },
       {
-        youtube: 'OtPeKoNp6us',
+        youtube: 'OtPeKoNp6us'
       },
       {
-        youtube: 'VZOyCmiSMmI',
+        youtube: 'VZOyCmiSMmI'
       },
       {
-        youtube: 'zf5vqokL6So',
+        youtube: 'zf5vqokL6So'
       },
       {
         tags: ['朝配信'],
-        youtube: 'b7OyyndTPVg',
+        youtube: 'b7OyyndTPVg'
       },
       {
         tags: ['収益化配信'],
-        youtube: 'JofDLAhBMf4',
-      },
-    ],
+        youtube: 'JofDLAhBMf4'
+      }
+    ]
   },
   {
     memberId: 'rui_seshima',
-    list: [],
+    list: []
   },
   {
     memberId: 'hikari_hira',
-    list: [],
+    list: []
   },
   // ハニーストラップ
   {
@@ -216,26 +216,26 @@ export const musics = [
     list: [
       {
         tags: ['犬'],
-        youtube: 'eo7w_Pnctvg',
-      },
-    ],
+        youtube: 'eo7w_Pnctvg'
+      }
+    ]
   },
   {
     memberId: 'patra_hnst',
-    list: [],
+    list: []
   },
   {
     memberId: 'charlotte_hnst',
     list: [
       {
         tags: ['Minecraft'],
-        youtube: '2kWuQz9sdfI',
-      },
-    ],
+        youtube: '2kWuQz9sdfI'
+      }
+    ]
   },
   {
     memberId: 'mary_hnst',
-    list: [],
+    list: []
   },
   // シュガーリリック
   {
@@ -243,92 +243,92 @@ export const musics = [
     list: [
       {
         tags: ['事件簿'],
-        youtube: 'elZZpZCes48',
+        youtube: 'elZZpZCes48'
       },
       {
-        youtube: 'g58eY1th86Y',
+        youtube: 'g58eY1th86Y'
       },
       {
-        youtube: 'r65mQAq78No',
-      },
-    ],
+        youtube: 'r65mQAq78No'
+      }
+    ]
   },
   {
     memberId: 'anna_kojo',
-    list: [],
+    list: []
   },
   {
     memberId: 'chrisshishio',
     list: [
       {
         tags: ['クリスチャンス'],
-        youtube: '6kUUVGXcbW0',
-      },
-    ],
+        youtube: '6kUUVGXcbW0'
+      }
+    ]
   },
   // ブイアパ
   {
     memberId: 'uge_and',
     list: [
       {
-        youtube: 'Y7Zu2IruAq4',
+        youtube: 'Y7Zu2IruAq4'
       },
       {
-        youtube: 'Mx2fNRAD6oI',
+        youtube: 'Mx2fNRAD6oI'
       },
       {
-        youtube: 'fkdrPZPXu_o',
-      },
-      {
-        tags: ['OP'],
-        youtube: 'x_g0Y7bkwsI',
+        youtube: 'fkdrPZPXu_o'
       },
       {
         tags: ['OP'],
-        youtube: 'kHZGsL8sV2Q',
+        youtube: 'x_g0Y7bkwsI'
+      },
+      {
+        tags: ['OP'],
+        youtube: 'kHZGsL8sV2Q'
       },
       {
         tags: ['AFK'],
-        youtube: 'pepiUg_zXWs',
-      },
-    ],
+        youtube: 'pepiUg_zXWs'
+      }
+    ]
   },
   {
     memberId: '_kanade_kanon',
     list: [
       {
-        youtube: 'Xj2LwGR8cGI',
-      },
-    ],
+        youtube: 'Xj2LwGR8cGI'
+      }
+    ]
   },
   {
     memberId: 'anko_kisaki',
     list: [
       {
-        youtube: 'sqG_a1-c8f4',
+        youtube: 'sqG_a1-c8f4'
       },
       {
-        youtube: 'Hn4Czfdmf5o',
+        youtube: 'Hn4Czfdmf5o'
       },
       {
-        youtube: '4AUQWE8uqqY',
+        youtube: '4AUQWE8uqqY'
       },
       {
-        youtube: 'fkdrPZPXu_o',
-      },
-    ],
+        youtube: 'fkdrPZPXu_o'
+      }
+    ]
   },
   {
     memberId: 'met_komori',
     list: [
       {
-        youtube: '4AUQWE8uqqY',
-      },
-    ],
+        youtube: '4AUQWE8uqqY'
+      }
+    ]
   },
   {
     memberId: 'wat_huma',
-    list: [],
+    list: []
   },
   // その他
   {
@@ -336,49 +336,49 @@ export const musics = [
     list: [
       {
         tags: ['Reality'],
-        youtube: 'aQtIfqKEMyE',
+        youtube: 'aQtIfqKEMyE'
       },
       {
         tags: ['Reality'],
-        youtube: '6qEzh3wKVJc',
+        youtube: '6qEzh3wKVJc'
       },
       {
         tags: ['名取さな'],
-        youtube: 'wpwo7CfZ0nQ',
-      },
-    ],
+        youtube: 'wpwo7CfZ0nQ'
+      }
+    ]
   },
   // 休止／引退
   {
     memberId: 'kuromu_inari',
-    list: [],
+    list: []
   },
   {
     memberId: 'eli_hnst',
-    list: [],
+    list: []
   },
   {
     memberId: 'hinako_umori',
     list: [
       {
-        youtube: 'jM1q8ekc9JQ',
+        youtube: 'jM1q8ekc9JQ'
       },
       {
         tags: ['待機'],
-        youtube: 'R97YidHjmA4',
-      },
-    ],
+        youtube: 'R97YidHjmA4'
+      }
+    ]
   },
   {
     memberId: 'akane_haibara',
     list: [
       {
-        youtube: 'Hn4Czfdmf5o',
-      },
-    ],
+        youtube: 'Hn4Czfdmf5o'
+      }
+    ]
   },
   {
     memberId: 'camomi_camomi',
-    list: [],
-  },
+    list: []
+  }
 ] as Music[]
