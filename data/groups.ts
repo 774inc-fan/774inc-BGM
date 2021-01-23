@@ -1,4 +1,4 @@
-import { MemberKey } from '@@/data/members'
+import { MemberKey } from 'data/members'
 
 export type Group = {
   name: string
@@ -17,16 +17,16 @@ export const groups = [
       'shiromiya_mimi',
       'natsumi_hashiba',
       'rui_seshima',
-      'hikari_hira',
-    ],
+      'hikari_hira'
+    ]
   },
   {
     name: 'ハニーストラップ',
-    members: ['mico_hnst', 'patra_hnst', 'charlotte_hnst', 'mary_hnst'],
+    members: ['mico_hnst', 'patra_hnst', 'charlotte_hnst', 'mary_hnst']
   },
   {
     name: 'シュガーリリック',
-    members: ['rene_ryugasaki', 'anna_kojo', 'chrisshishio'],
+    members: ['rene_ryugasaki', 'anna_kojo', 'chrisshishio']
   },
   {
     name: 'ブイアパ',
@@ -35,12 +35,12 @@ export const groups = [
       '_kanade_kanon',
       'anko_kisaki',
       'met_komori',
-      'wat_huma',
-    ],
+      'wat_huma'
+    ]
   },
   {
     name: 'その他',
-    members: ['other'],
+    members: ['other']
   },
   {
     name: '休止／引退',
@@ -49,7 +49,7 @@ export const groups = [
       'eli_hnst',
       'hinako_umori',
       'akane_haibara',
-      'camomi_camomi',
-    ],
-  },
+      'camomi_camomi'
+    ]
+  }
 ] as Group[]
