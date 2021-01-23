@@ -1,6 +1,6 @@
-import { MemberKey } from 'data/members'
+import { MemberKey } from 'app/data/members'
 
-export type Music = {
+export type MusicData = {
   memberId: MemberKey
   list: MusicItem[]
 }
@@ -11,7 +11,7 @@ export type MusicItem = {
   youtube?: string
 }
 
-export const musics = [
+export const musicsData = [
   // 有閑喫茶あにまーれ
   {
     memberId: 'haneru_inaba',
@@ -381,4 +381,4 @@ export const musics = [
     memberId: 'camomi_camomi',
     list: []
   }
-] as Music[]
+] as MusicData[]

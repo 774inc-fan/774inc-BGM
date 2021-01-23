@@ -1,4 +1,4 @@
-export type Member = {
+export type MemberData = {
   id: MemberKey
   name: string
   img: string
@@ -37,7 +37,7 @@ export type MemberKey =
   | 'akane_haibara'
   | 'camomi_camomi'
 
-export const members = [
+export const membersData = [
   // 有閑喫茶あにまーれ
   {
     id: 'haneru_inaba',
@@ -178,4 +178,4 @@ export const members = [
     name: '鴨見カモミ',
     img: 'camomi_camomi.jpg'
   }
-] as Member[]
+] as MemberData[]
