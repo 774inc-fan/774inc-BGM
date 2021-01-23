@@ -1,11 +1,11 @@
-import { MemberKey } from 'data/members'
+import { MemberKey } from 'app/data/members'
 
-export type Group = {
+export type GroupData = {
   name: string
   members: MemberKey[]
 }
 
-export const groups = [
+export const groupsData = [
   {
     name: '有閑喫茶あにまーれ',
     members: [
@@ -52,4 +52,4 @@ export const groups = [
       'camomi_camomi'
     ]
   }
-] as Group[]
+] as GroupData[]
