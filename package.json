@@ -25,7 +25,7 @@
     "@nuxt/typescript-build": "2.0.4",
     "@nuxt/typescript-runtime": "2.0.0",
     "@nuxtjs/composition-api": "0.18.1",
-    "@nuxtjs/vuetify": "1.11.2",
+    "@nuxtjs/vuetify": "1.11.3",
     "core-js": "3.8.2",
     "nuxt": "2.14.12"
   },
