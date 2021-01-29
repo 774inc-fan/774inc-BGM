@@ -1,1 +1,29 @@
-// app global css in Sass form
+.app-alert
+  background-color: $grey-3
+  border-radius: $generic-border-radius
+  margin: 16px 0
+  padding: 16px 24px
+  font-size: 1em
+  border-width: 0 5px
+  border-style: solid
+  border-color: $grey
+  letter-spacing: .5px
+
+  > p, > ul
+    margin-bottom: 0
+
+  &--tip
+    background-color: scale-color($positive, $lightness: 75%)
+    border-color: $positive
+
+  &--warning
+    background-color: scale-color($warning, $lightness: 50%)
+    border-color: $warning
+
+  &--danger
+    background-color: scale-color($negative, $lightness: 80%)
+    border-color: $negative
+
+  &__title
+    font-weight: 500
+    padding-bottom: 16px
