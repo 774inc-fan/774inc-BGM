@@ -1,109 +1,91 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+  <q-layout view="hHh LpR fFf">
+
+    <q-header elevated class="bg-primary text-white">
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="leftDrawerOpen = !leftDrawerOpen"
-        />
-
+        <q-btn dense flat round icon="ion-menu" @click="left = !left" />
         <q-toolbar-title>
-          Quasar App
+          ななしBGM
         </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+        <q-btn color="secondary" to="/about">
+          このサイトについて
+        </q-btn>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      content-class="bg-grey-1"
-    >
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-          Essential Links
-        </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
+    <q-drawer show-if-above v-model="left" side="left" bordered>
+      <q-scroll-area class="fit">
+        <q-list>
+          <div>
+            <q-item to="/">
+              <q-item-section avatar>
+                <q-icon name="ion-people" />
+              </q-item-section>
+              <q-item-section>
+                全てのVtuber
+              </q-item-section>
+            </q-item>
+          </div>
+          <div v-for="(group, groupIndex) in list" :key="groupIndex">
+            <q-separator />
+            <q-item-label header>
+              {{ group.name }}
+            </q-item-label>
+            <q-item v-for="member in group.members" :key="member.id" :to="`/v/${member.id}`">
+              <q-item-section avatar>
+                <q-avatar>
+                  <q-icon v-if="member.img === undefined" name="ion-person" />
+                  <img v-else :src="`/images/${member.img}`" />
+                </q-avatar>
+              </q-item-section>
+              <q-item-section>
+                {{ member.name }}
+              </q-item-section>
+              <q-item-section v-if="member.count > 0" side>
+                <q-badge :label="`${member.count}`" />
+              </q-item-section>
+            </q-item>
+          </div>
+        </q-list>
+      </q-scroll-area>
     </q-drawer>
 
     <q-page-container>
       <router-view />
     </q-page-container>
+
   </q-layout>
 </template>
 
 <script lang="ts">
-import EssentialLink from 'components/EssentialLink.vue'
-
-const linksData = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
-]
-
 import { defineComponent, ref } from '@vue/composition-api'
+import { groupsData } from 'app/data/groups'
+import { membersData } from 'app/data/members'
+import { musicsData } from 'app/data/musics'
 
 export default defineComponent({
   name: 'MainLayout',
-  components: { EssentialLink },
   setup () {
-    const leftDrawerOpen = ref(false)
-    const essentialLinks = ref(linksData)
+    const left = ref(null)
+    const list = groupsData.map((group) => {
+      return {
+        name: group.name,
+        members: group.members.map((memberId) => {
+          const member = membersData.filter(
+            (member) => member.id === memberId
+          )[0]
+          const music = musicsData.filter(
+            (music) => music.memberId === memberId
+          )[0]
+          return {
+            ...member,
+            count: music.list.length
+          }
+        })
+      }
+    })
 
-    return { leftDrawerOpen, essentialLinks }
+    return { left, list }
   }
 })
 </script>
