@@ -1,31 +1,12 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
-    <div>
-      <div style="font-size: 30vh">
-        404
-      </div>
-
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
-
-      <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
-        to="/"
-        label="Go Home"
-        no-caps
-      />
-    </div>
-  </div>
+  <q-page padding>
+    <h1 class="app-h1">
+      存在しないページです
+    </h1>
+    <p>
+      <q-btn color="primary" to="/">
+        トップページへ戻る
+      </q-btn>
+    </p>
+  </q-page>
 </template>
-
-<script lang="ts">
-import { defineComponent } from '@vue/composition-api'
-
-export default defineComponent({
-  name: 'Error404'
-})
-</script>
