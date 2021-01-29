@@ -7,7 +7,8 @@
     "eamodio.gitlens",
     // Quasar
     "dbaeumer.vscode-eslint",
-    "octref.vetur"
+    "octref.vetur",
+    "syler.sass-indented"
   ],
   "settings": {
     "editor.formatOnSave": true,
