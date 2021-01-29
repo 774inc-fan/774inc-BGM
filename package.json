@@ -1,8 +1,7 @@
 {
   "name": "774inc-bgm",
-  "version": "0.0.1",
-  "description": "774inc-BGM",
-  "productName": "774inc-BGM",
+  "productName": "ななしBGM",
+  "description": "774incのVtuberが使っているBGMをまとめています。推しが使っているBGMを探しているなら、ぜひチェックしてください！",
   "author": "ozelotjp",
   "private": true,
   "scripts": {
