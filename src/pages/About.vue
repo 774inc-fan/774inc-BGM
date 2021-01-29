@@ -1,5 +1,6 @@
 <template>
   <q-page padding>
+
     <h1 class="app-h1">
       このサイトについて
     </h1>
@@ -33,5 +34,6 @@
       <q-btn type="a" href="https://twitter.com/ozelotjp_v" target="_blank" color="primary" icon="ion-logo-twitter" label="Twitterアカウントはこちら" no-caps />
       <q-btn type="a" href="https://docs.google.com/forms/d/e/1FAIpQLSdDSD2L1HlDBx9obWEX5H6nXWmgVggcjAdqyokebFuvazEj7g/viewform?usp=pp_url&entry.309446658=bgm.774inc.app" target="_blank" color="primary" icon="ion-mail" label="お問い合わせフォームはこちら" />
     </div>
+
   </q-page>
 </template>
