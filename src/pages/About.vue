@@ -22,7 +22,7 @@
     <p>
       もしよろしければ、下記の情報提供フォームからご連絡ください！
     </p>
-    <q-btn type="a" href="https://forms.gle/3F384gQx8YWztL5S6" target="_blank" color="primary" icon="ion-mail" label="情報提供フォームはこちら" />
+    <q-btn type="a" href="https://forms.gle/3F384gQx8YWztL5S6" target="_blank" color="primary" :icon="icon.ionMail" label="情報提供フォームはこちら" />
 
     <h2 class="app-h2">
       お問い合わせ
@@ -31,9 +31,22 @@
       Twitterで直接リプライを送るか、総合お問い合わせフォームをご利用ください。
     </p>
     <div class="q-gutter-sm">
-      <q-btn type="a" href="https://twitter.com/ozelotjp_v" target="_blank" color="primary" icon="ion-logo-twitter" label="Twitterアカウントはこちら" no-caps />
-      <q-btn type="a" href="https://docs.google.com/forms/d/e/1FAIpQLSdDSD2L1HlDBx9obWEX5H6nXWmgVggcjAdqyokebFuvazEj7g/viewform?usp=pp_url&entry.309446658=bgm.774inc.app" target="_blank" color="primary" icon="ion-mail" label="お問い合わせフォームはこちら" />
+      <q-btn type="a" href="https://twitter.com/ozelotjp_v" target="_blank" color="primary" :icon="icon.ionLogoTwitter" label="Twitterアカウントはこちら" no-caps />
+      <q-btn type="a" href="https://docs.google.com/forms/d/e/1FAIpQLSdDSD2L1HlDBx9obWEX5H6nXWmgVggcjAdqyokebFuvazEj7g/viewform?usp=pp_url&entry.309446658=bgm.774inc.app" target="_blank" color="primary" :icon="icon.ionMail" label="お問い合わせフォームはこちら" />
     </div>
 
   </q-page>
 </template>
+
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+import { ionLogoTwitter, ionMail } from '@quasar/extras/ionicons-v5'
+
+export default defineComponent({
+  setup () {
+    const icon = { ionLogoTwitter, ionMail }
+
+    return { icon }
+  }
+})
+</script>
