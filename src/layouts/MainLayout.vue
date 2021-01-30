@@ -3,7 +3,7 @@
 
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
-        <q-btn dense flat round icon="ion-menu" @click="left = !left" />
+        <q-btn dense flat round :icon="icon.ionMenu" @click="left = !left" />
         <q-toolbar-title>
           ななしBGM
         </q-toolbar-title>
@@ -19,7 +19,7 @@
           <div>
             <q-item to="/">
               <q-item-section avatar>
-                <q-icon name="ion-people" />
+                <q-icon :name="icon.ionPeople" />
               </q-item-section>
               <q-item-section>
                 全てのVtuber
@@ -59,33 +59,36 @@
 
 <script lang="ts">
 import { defineComponent, ref } from '@vue/composition-api'
-import { groupsData } from 'app/data/groups'
-import { membersData } from 'app/data/members'
-import { musicsData } from 'app/data/musics'
+import { ionMenu, ionPeople, ionPerson } from '@quasar/extras/ionicons-v5'
+import { groupData } from 'app/data/groups'
+import { memberData } from 'app/data/members'
+import { musicData } from 'app/data/musics'
 
 export default defineComponent({
   name: 'MainLayout',
   setup () {
+    const icon = { ionMenu, ionPeople, ionPerson }
+
     const left = ref(null)
-    const list = groupsData.map((group) => {
+    const list = groupData.map((group) => {
       return {
-        name: group.name,
-        members: group.members.map((memberId) => {
-          const member = membersData.filter(
-            (member) => member.id === memberId
-          )[0]
-          const music = musicsData.filter(
-            (music) => music.memberId === memberId
-          )[0]
-          return {
-            ...member,
-            count: music.list.length
-          }
-        })
+        ...group,
+        members: memberData
+          .filter((member) => member.group === group.key)
+          .map((member) => {
+            return {
+              ...member,
+              count: musicData.filter((music) => {
+                return music.members.filter((musicMember) => {
+                  return musicMember.member === member.key
+                }).length > 0
+              }).length
+            }
+          })
       }
     })
 
-    return { left, list }
+    return { icon, left, list }
   }
 })
 </script>
