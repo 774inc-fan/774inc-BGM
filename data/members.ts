@@ -1,8 +1,4 @@
-export type MemberData = {
-  id: MemberKey
-  name: string
-  img: string
-}
+import { GroupKey } from './groups'
 
 export type MemberKey =
   // 有閑喫茶あにまーれ
@@ -13,6 +9,8 @@ export type MemberKey =
   | 'izumi_yunohara'
   | 'shiromiya_mimi'
   | 'natsumi_hashiba'
+  | 'rui_seshima'
+  | 'hikari_hira'
   // ハニーストラップ
   | 'mico_hnst'
   | 'patra_hnst'
@@ -28,154 +26,121 @@ export type MemberKey =
   | 'anko_kisaki'
   | 'met_komori'
   | 'wat_huma'
-  // その他
-  | 'other'
-  // 休止／引退
-  | 'kuromu_inari'
-  | 'eli_hnst'
-  | 'hinako_umori'
-  | 'akane_haibara'
-  | 'camomi_camomi'
 
-export const membersData = [
+export type MemberDatum = {
+  key: MemberKey
+  group: GroupKey
+  name: string
+}
+
+export const memberData : MemberDatum[] = [
   // 有閑喫茶あにまーれ
   {
-    id: 'haneru_inaba',
-    name: '因幡はねる',
-    img: 'haneru_inaba.jpg'
+    key: 'haneru_inaba',
+    group: 'animare_cafe',
+    name: '因幡はねる'
   },
   {
-    id: 'ichika_souya',
-    name: '宗谷いちか',
-    img: 'ichika_souya.jpg'
+    key: 'ichika_souya',
+    group: 'animare_cafe',
+    name: '宗谷いちか'
   },
   {
-    id: 'ran_hinokuma',
-    name: '日ノ隈らん',
-    img: 'ran_hinokuma.jpg'
+    key: 'ran_hinokuma',
+    group: 'animare_cafe',
+    name: '日ノ隈らん'
   },
   {
-    id: 'kuku_kazami',
-    name: '風見くく',
-    img: 'kuku_kazami.jpg'
+    key: 'kuku_kazami',
+    group: 'animare_cafe',
+    name: '風見くく'
   },
   {
-    id: 'izumi_yunohara',
-    name: '柚原いづみ',
-    img: 'izumi_yunohara.jpg'
+    key: 'izumi_yunohara',
+    group: 'animare_cafe',
+    name: '柚原いづみ'
   },
   {
-    id: 'shiromiya_mimi',
-    name: '白宮みみ',
-    img: 'shiromiya_mimi.jpg'
+    key: 'shiromiya_mimi',
+    group: 'animare_cafe',
+    name: '白宮みみ'
   },
   {
-    id: 'natsumi_hashiba',
-    name: '羽柴なつみ',
-    img: 'natsumi_hashiba.jpg'
+    key: 'natsumi_hashiba',
+    group: 'animare_cafe',
+    name: '羽柴なつみ'
   },
   {
-    id: 'rui_seshima',
-    name: '瀬島るい',
-    img: 'rui_seshima.jpg'
+    key: 'rui_seshima',
+    group: 'animare_cafe',
+    name: '瀬島るい'
   },
   {
-    id: 'hikari_hira',
-    name: '飛良ひかり',
-    img: 'hikari_hira.jpg'
+    key: 'hikari_hira',
+    group: 'animare_cafe',
+    name: '飛良ひかり'
   },
   // ハニーストラップ
   {
-    id: 'mico_hnst',
-    name: '堰代ミコ',
-    img: 'mico_hnst.jpg'
+    key: 'mico_hnst',
+    group: 'honey_strap',
+    name: '堰代ミコ'
   },
   {
-    id: 'patra_hnst',
-    name: '周防パトラ',
-    img: 'patra_hnst.jpg'
+    key: 'patra_hnst',
+    group: 'honey_strap',
+    name: '周防パトラ'
   },
   {
-    id: 'charlotte_hnst',
-    name: '島村シャルロット',
-    img: 'charlotte_hnst.jpg'
+    key: 'charlotte_hnst',
+    group: 'honey_strap',
+    name: '島村シャルロット'
   },
   {
-    id: 'mary_hnst',
-    name: '西園寺メアリ',
-    img: 'mary_hnst.jpg'
+    key: 'mary_hnst',
+    group: 'honey_strap',
+    name: '西園寺メアリ'
   },
   // シュガーリリック
   {
-    id: 'rene_ryugasaki',
-    name: '龍ケ崎リン',
-    img: 'rene_ryugasaki.jpg'
+    key: 'rene_ryugasaki',
+    group: 'sugar_lyric',
+    name: '龍ケ崎リン'
   },
   {
-    id: 'anna_kojo',
-    name: '虎城アンナ',
-    img: 'anna_kojo.jpg'
+    key: 'anna_kojo',
+    group: 'sugar_lyric',
+    name: '虎城アンナ'
   },
   {
-    id: 'chrisshishio',
-    name: '獅子王クリス',
-    img: 'chrisshishio.jpg'
+    key: 'chrisshishio',
+    group: 'sugar_lyric',
+    name: '獅子王クリス'
   },
   // ブイアパ
   {
-    id: 'uge_and',
-    name: '安戸ゆげ',
-    img: 'uge_and.jpg'
+    key: 'uge_and',
+    group: 'vtuber_apart',
+    name: '安戸ゆげ'
   },
   {
-    id: '_kanade_kanon',
-    name: '花奏かのん',
-    img: '_kanade_kanon.jpg'
+    key: '_kanade_kanon',
+    group: 'vtuber_apart',
+    name: '花奏かのん'
   },
   {
-    id: 'anko_kisaki',
-    name: '季咲あんこ',
-    img: 'anko_kisaki.jpg'
+    key: 'anko_kisaki',
+    group: 'vtuber_apart',
+    name: '季咲あんこ'
   },
   {
-    id: 'met_komori',
-    name: '小森めと',
-    img: 'met_komori.jpg'
+    key: 'met_komori',
+    group: 'vtuber_apart',
+    name: '小森めと'
   },
   {
-    id: 'wat_huma',
-    name: '不磨わっと',
-    img: 'wat_huma.jpg'
-  },
-  // その他
-  {
-    id: 'other',
-    name: 'その他'
-  },
-  // 休止／引退
-  {
-    id: 'kuromu_inari',
-    name: '稲荷くろむ',
-    img: 'kuromu_inari.jpg'
-  },
-  {
-    id: 'eli_hnst',
-    name: '蒼月エリ',
-    img: 'eli_hnst.jpg'
-  },
-  {
-    id: 'hinako_umori',
-    name: '宇森ひなこ',
-    img: 'hinako_umori.jpg'
-  },
-  {
-    id: 'akane_haibara',
-    name: '灰原あかね',
-    img: 'akane_haibara.jpg'
-  },
-  {
-    id: 'camomi_camomi',
-    name: '鴨見カモミ',
-    img: 'camomi_camomi.jpg'
+    key: 'wat_huma',
+    group: 'vtuber_apart',
+    name: '不磨わっと'
   }
-] as MemberData[]
+]
