@@ -1,13 +1,13 @@
 <template>
   <q-layout view="hHh LpR fFf">
 
-    <q-header elevated class="bg-primary text-white">
+    <q-header elevated class="bg-accent text-white">
       <q-toolbar>
         <q-btn dense flat round :icon="icon.ionMenu" @click="left = !left" />
         <q-toolbar-title>
           ななしBGM
         </q-toolbar-title>
-        <q-btn color="secondary" to="/about">
+        <q-btn to="/about" color="primary" >
           このサイトについて
         </q-btn>
       </q-toolbar>
@@ -26,23 +26,22 @@
               </q-item-section>
             </q-item>
           </div>
-          <div v-for="(group, groupIndex) in list" :key="groupIndex">
+          <div v-for="group in list" :key="group.key">
             <q-separator />
             <q-item-label header>
               {{ group.name }}
             </q-item-label>
-            <q-item v-for="member in group.members" :key="member.id" :to="`/v/${member.id}`">
+            <q-item v-for="member in group.members" :key="member.key" active-class="bg-secondary" :to="`/v/${member.key}`">
               <q-item-section avatar>
                 <q-avatar>
-                  <q-icon v-if="member.img === undefined" name="ion-person" />
-                  <img v-else :src="`/images/${member.img}`" />
+                  <img :src="`/images/${member.key}.jpg`" />
                 </q-avatar>
               </q-item-section>
               <q-item-section>
                 {{ member.name }}
               </q-item-section>
               <q-item-section v-if="member.count > 0" side>
-                <q-badge :label="`${member.count}`" />
+                <q-badge color="accent" :label="`${member.count}`" />
               </q-item-section>
             </q-item>
           </div>
