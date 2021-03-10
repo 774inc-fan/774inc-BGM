@@ -17,7 +17,7 @@
     </p>
 
     <h2 class="app-h2">
-      私の知っているBGMがWebサイトにないのですが？
+      私の知っているBGMが一覧にないのですが？
     </h2>
     <p>
       もしよろしければ、下記の情報提供フォームからご連絡ください！
@@ -32,7 +32,7 @@
     </p>
     <div class="q-gutter-sm">
       <q-btn type="a" href="https://twitter.com/ozelotjp_v" target="_blank" color="primary" :icon="icon.ionLogoTwitter" label="Twitterアカウントはこちら" no-caps />
-      <q-btn type="a" href="https://docs.google.com/forms/d/e/1FAIpQLSdDSD2L1HlDBx9obWEX5H6nXWmgVggcjAdqyokebFuvazEj7g/viewform?usp=pp_url&entry.309446658=bgm.774inc.app" target="_blank" color="primary" :icon="icon.ionMail" label="お問い合わせフォームはこちら" />
+      <q-btn type="a" href="https://docs.google.com/forms/d/e/1FAIpQLSdDSD2L1HlDBx9obWEX5H6nXWmgVggcjAdqyokebFuvazEj7g/viewform?usp=pp_url&entry.309446658=bgm.774inc.app" target="_blank" color="primary" :icon="icon.ionMail" label="総合お問い合わせフォームはこちら" />
     </div>
 
   </q-page>
