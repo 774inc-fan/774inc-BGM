@@ -17,7 +17,7 @@
       <q-scroll-area class="fit">
         <q-list>
           <div>
-            <q-item to="/">
+            <q-item to="/index" active-class="bg-secondary">
               <q-item-section avatar>
                 <q-icon :name="icon.ionPeople" />
               </q-item-section>
