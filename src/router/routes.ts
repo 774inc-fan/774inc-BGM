@@ -8,6 +8,7 @@ const routes: RouteConfig[] = [
       { path: '/', redirect: '/index' },
       { path: '/index', component: () => import('pages/Index.vue') },
       { path: '/about', component: () => import('pages/About.vue') },
+      { path: '/v/:id', component: () => import('pages/Index.vue') }
     ]
   },
 
