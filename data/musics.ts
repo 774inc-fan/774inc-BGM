@@ -1,384 +1,478 @@
 import { MemberKey } from 'app/data/members'
 
-export type MusicData = {
-  memberId: MemberKey
-  list: MusicItem[]
+type MusicAuthor =
+  | '★本人'
+  | '☆ファン'
+  | 'beco（騒音のない世界）'
+  | 'DOVA-SYNDROME'
+  | 'Music is VFR'
+  | 'MusMus'
+  | 'PeriTune'
+  | 'こんとどぅふぇ'
+
+export type MusicDaum = {
+  name: string
+  author: MusicAuthor
+  youtube: string
+  members: {
+    member: MemberKey
+    tags: string[]
+  }[]
 }
 
-export type MusicItem = {
-  tags?: string[]
-  source?: string
-  youtube?: string
-}
-
-export const musicsData = [
-  // 有閑喫茶あにまーれ
+export const musicData: MusicDaum[] = [
   {
-    memberId: 'haneru_inaba',
-    list: [
-      {
-        youtube: 'rNsjKMSVg1Q'
-      },
-      {
-        youtube: 'C2gxSXuo4uQ'
-      },
-      {
-        tags: ['VakaTuber決戦', 'カチコミBGM'],
-        youtube: '7iz4Sf6NGjo'
-      }
+    name: 'Tiny',
+    author: 'DOVA-SYNDROME',
+    youtube: 'rNsjKMSVg1Q',
+    members: [
+      { member: 'haneru_inaba', tags: [] }
     ]
   },
   {
-    memberId: 'ichika_souya',
-    list: [
-      {
-        youtube: 'SkQihFHiWt0'
-      },
-      {
-        youtube: 'pgjwcEpjhKE'
-      },
-      {
-        youtube: 'R6tSdHM6GKU'
-      },
-      {
-        youtube: '2hZGLVkdjRA'
-      },
-      {
-        youtube: 'eo7w_Pnctvg'
-      },
-      {
-        youtube: 'aYKOc3-HOhg'
-      },
-      {
-        tags: ['待機'],
-        youtube: 'MkZSSPHp3LM'
-      },
-      {
-        tags: ['昔使ってた'],
-        youtube: '1FCjU-V9FDs'
-      },
-      {
-        tags: ['りしーゆー！'],
-        youtube: '9swXEd6SWjA'
-      },
-      {
-        tags: ['朝配信 待機'],
-        youtube: 'pKMGBSxHLsg'
-      },
-      {
-        tags: ['朝配信 OP'],
-        youtube: 'I0xCR0RfUoM'
-      },
-      {
-        tags: ['朝配信'],
-        youtube: 'n4zl8LKKSp8'
-      },
-      {
-        tags: ['朝配信'],
-        youtube: '2KzkWWkPSpU'
-      },
-      {
-        tags: ['朝配信'],
-        youtube: '4pqJA7aiVJc'
-      },
-      {
-        tags: ['バイノーラル'],
-        youtube: '7kuQFPn3uc8'
-      },
-      {
-        tags: ['バイノーラル'],
-        youtube: 'hTpmFIwhx9s'
-      },
-      {
-        tags: ['恋するVTuber OP'],
-        youtube: 'CdiJE_tMdVc'
-      },
-      {
-        tags: ['初配信'],
-        youtube: 'GJJuYze3A8k'
-      },
-      {
-        tags: ['初期OP曲'],
-        youtube: '4_5xXFsFmSc'
-      }
+    name: 'ポップコーン',
+    author: 'DOVA-SYNDROME',
+    youtube: 'C2gxSXuo4uQ',
+    members: [
+      { member: 'haneru_inaba', tags: [] }
     ]
   },
   {
-    memberId: 'ran_hinokuma',
-    list: [
-      {
-        youtube: 'S-bErFZ5bpo'
-      },
-      {
-        youtube: '5tuhiMYovPY'
-      },
-      {
-        youtube: 'bogzWYYz91U'
-      },
-      {
-        tags: ['料理配信'],
-        youtube: 'RT0KL9ovwuw'
-      },
-      {
-        tags: ['料理配信'],
-        youtube: '-Df1VcAMjtM'
-      },
-      {
-        tags: ['らん太郎死す'],
-        youtube: 'D-IwLexmQh0'
-      }
+    name: '弔い合戦',
+    author: 'DOVA-SYNDROME',
+    youtube: '7iz4Sf6NGjo',
+    members: [
+      { member: 'haneru_inaba', tags: ['VakaTuber決戦', 'カチコミBGM'] }
     ]
   },
   {
-    memberId: 'kuku_kazami',
-    list: [
-      {
-        youtube: '9bYPpAEgCzo'
-      },
-      {
-        tags: ['スパチャ返し'],
-        youtube: 'w4s60v2FFfs'
-      }
+    name: 'SUMMER TRIANGLE',
+    author: 'DOVA-SYNDROME',
+    youtube: 'SkQihFHiWt0',
+    members: [
+      { member: 'ichika_souya', tags: [] }
     ]
   },
   {
-    memberId: 'izumi_yunohara',
-    list: [
-      {
-        youtube: '723NjKyD_L8'
-      },
-      {
-        youtube: 'Y7Zu2IruAq4'
-      },
-      {
-        youtube: 'p1O7tSN5_Co'
-      }
+    name: '10℃',
+    author: 'DOVA-SYNDROME',
+    youtube: 'pgjwcEpjhKE',
+    members: [
+      { member: 'ichika_souya', tags: [] }
     ]
   },
   {
-    memberId: 'shiromiya_mimi',
-    list: [
-      {
-        youtube: 'Hn4Czfdmf5o'
-      },
-      {
-        tags: ['料理'],
-        youtube: 'YWiUeQibq6k'
-      },
-      {
-        tags: ['ED'],
-        youtube: 'CXz3SVvZiPc'
-      }
+    name: 'Hey So Jungle',
+    author: 'DOVA-SYNDROME',
+    youtube: 'R6tSdHM6GKU',
+    members: [
+      { member: 'ichika_souya', tags: [] }
     ]
   },
   {
-    memberId: 'natsumi_hashiba',
-    list: [
-      {
-        youtube: 'aYKOc3-HOhg'
-      },
-      {
-        youtube: 'xO26nUocp-M'
-      },
-      {
-        youtube: 'bJxIo_beMjg'
-      },
-      {
-        youtube: 'OtPeKoNp6us'
-      },
-      {
-        youtube: 'VZOyCmiSMmI'
-      },
-      {
-        youtube: 'zf5vqokL6So'
-      },
-      {
-        tags: ['朝配信'],
-        youtube: 'b7OyyndTPVg'
-      },
-      {
-        tags: ['収益化配信'],
-        youtube: 'JofDLAhBMf4'
-      }
+    name: 'ヒトツダケ',
+    author: 'DOVA-SYNDROME',
+    youtube: '2hZGLVkdjRA',
+    members: [
+      { member: 'ichika_souya', tags: [] }
     ]
   },
   {
-    memberId: 'rui_seshima',
-    list: []
-  },
-  {
-    memberId: 'hikari_hira',
-    list: []
-  },
-  // ハニーストラップ
-  {
-    memberId: 'mico_hnst',
-    list: [
-      {
-        tags: ['犬'],
-        youtube: 'eo7w_Pnctvg'
-      }
+    name: 'なんでしょう？',
+    author: 'DOVA-SYNDROME',
+    youtube: 'eo7w_Pnctvg',
+    members: [
+      { member: 'ichika_souya', tags: [] },
+      { member: 'mico_hnst', tags: ['犬'] }
     ]
   },
   {
-    memberId: 'patra_hnst',
-    list: []
-  },
-  {
-    memberId: 'charlotte_hnst',
-    list: [
-      {
-        tags: ['Minecraft'],
-        youtube: '2kWuQz9sdfI'
-      }
+    name: '野良猫は宇宙を目指した',
+    author: 'DOVA-SYNDROME',
+    youtube: 'aYKOc3-HOhg',
+    members: [
+      { member: 'ichika_souya', tags: [] },
+      { member: 'natsumi_hashiba', tags: [] }
     ]
   },
   {
-    memberId: 'mary_hnst',
-    list: []
-  },
-  // シュガーリリック
-  {
-    memberId: 'rene_ryugasaki',
-    list: [
-      {
-        tags: ['事件簿'],
-        youtube: 'elZZpZCes48'
-      },
-      {
-        youtube: 'g58eY1th86Y'
-      },
-      {
-        youtube: 'r65mQAq78No'
-      }
+    name: 'プリティアイドル',
+    author: 'こんとどぅふぇ',
+    youtube: 'MkZSSPHp3LM',
+    members: [
+      { member: 'ichika_souya', tags: ['待機'] }
     ]
   },
   {
-    memberId: 'anna_kojo',
-    list: []
-  },
-  {
-    memberId: 'chrisshishio',
-    list: [
-      {
-        tags: ['クリスチャンス'],
-        youtube: '6kUUVGXcbW0'
-      }
-    ]
-  },
-  // ブイアパ
-  {
-    memberId: 'uge_and',
-    list: [
-      {
-        youtube: 'Y7Zu2IruAq4'
-      },
-      {
-        youtube: 'Mx2fNRAD6oI'
-      },
-      {
-        youtube: 'fkdrPZPXu_o'
-      },
-      {
-        tags: ['OP'],
-        youtube: 'x_g0Y7bkwsI'
-      },
-      {
-        tags: ['OP'],
-        youtube: 'kHZGsL8sV2Q'
-      },
-      {
-        tags: ['AFK'],
-        youtube: 'pepiUg_zXWs'
-      }
+    name: 'じゃんじゃんじゃんじゃんっ！',
+    author: 'DOVA-SYNDROME',
+    youtube: '1FCjU-V9FDs',
+    members: [
+      { member: 'ichika_souya', tags: ['昔使ってた'] }
     ]
   },
   {
-    memberId: '_kanade_kanon',
-    list: [
-      {
-        youtube: 'Xj2LwGR8cGI'
-      }
+    name: 'Shall we meet？',
+    author: 'DOVA-SYNDROME',
+    youtube: '9swXEd6SWjA',
+    members: [
+      { member: 'ichika_souya', tags: ['りしーゆー！'] }
     ]
   },
   {
-    memberId: 'anko_kisaki',
-    list: [
-      {
-        youtube: 'sqG_a1-c8f4'
-      },
-      {
-        youtube: 'Hn4Czfdmf5o'
-      },
-      {
-        youtube: '4AUQWE8uqqY'
-      },
-      {
-        youtube: 'fkdrPZPXu_o'
-      }
+    name: 'Let\'s!',
+    author: 'DOVA-SYNDROME',
+    youtube: 'pKMGBSxHLsg',
+    members: [
+      { member: 'ichika_souya', tags: ['朝配信 待機'] }
     ]
   },
   {
-    memberId: 'met_komori',
-    list: [
-      {
-        youtube: '4AUQWE8uqqY'
-      }
+    name: 'SHISE NI NARU',
+    author: '☆ファン',
+    youtube: 'I0xCR0RfUoM',
+    members: [
+      { member: 'ichika_souya', tags: ['朝配信 OP'] }
     ]
   },
   {
-    memberId: 'wat_huma',
-    list: []
-  },
-  // その他
-  {
-    memberId: 'other',
-    list: [
-      {
-        tags: ['Reality'],
-        youtube: 'aQtIfqKEMyE'
-      },
-      {
-        tags: ['Reality'],
-        youtube: '6qEzh3wKVJc'
-      },
-      {
-        tags: ['名取さな'],
-        youtube: 'wpwo7CfZ0nQ'
-      }
-    ]
-  },
-  // 休止／引退
-  {
-    memberId: 'kuromu_inari',
-    list: []
-  },
-  {
-    memberId: 'eli_hnst',
-    list: []
-  },
-  {
-    memberId: 'hinako_umori',
-    list: [
-      {
-        youtube: 'jM1q8ekc9JQ'
-      },
-      {
-        tags: ['待機'],
-        youtube: 'R97YidHjmA4'
-      }
+    name: 'Positive_Happy',
+    author: 'PeriTune',
+    youtube: 'n4zl8LKKSp8',
+    members: [
+      { member: 'ichika_souya', tags: ['朝配信'] }
     ]
   },
   {
-    memberId: 'akane_haibara',
-    list: [
-      {
-        youtube: 'Hn4Czfdmf5o'
-      }
+    name: 'Morning',
+    author: 'DOVA-SYNDROME',
+    youtube: '2KzkWWkPSpU',
+    members: [
+      { member: 'ichika_souya', tags: ['朝配信'] }
     ]
   },
   {
-    memberId: 'camomi_camomi',
-    list: []
+    name: 'パステルハウス',
+    author: 'DOVA-SYNDROME',
+    youtube: '4pqJA7aiVJc',
+    members: [
+      { member: 'ichika_souya', tags: ['朝配信'] }
+    ]
+  },
+  {
+    name: 'ゆりかご',
+    author: 'DOVA-SYNDROME',
+    youtube: '7kuQFPn3uc8',
+    members: [
+      { member: 'ichika_souya', tags: ['バイノーラル'] }
+    ]
+  },
+  {
+    name: 'おやすみオルゴール',
+    author: 'DOVA-SYNDROME',
+    youtube: 'hTpmFIwhx9s',
+    members: [
+      { member: 'ichika_souya', tags: ['バイノーラル'] }
+    ]
+  },
+  {
+    name: 'いちごホイップ',
+    author: 'DOVA-SYNDROME',
+    youtube: 'CdiJE_tMdVc',
+    members: [
+      { member: 'ichika_souya', tags: ['恋するVTuber OP'] }
+    ]
+  },
+  {
+    name: 'TALK and WALK',
+    author: 'DOVA-SYNDROME',
+    youtube: 'GJJuYze3A8k',
+    members: [
+      { member: 'ichika_souya', tags: ['初配信'] }
+    ]
+  },
+  {
+    name: 'Cosmic Mini',
+    author: 'DOVA-SYNDROME',
+    youtube: '4_5xXFsFmSc',
+    members: [
+      { member: 'ichika_souya', tags: ['初期OP曲'] }
+    ]
+  },
+  {
+    name: 'Laid_Back',
+    author: 'PeriTune',
+    youtube: 'S-bErFZ5bpo',
+    members: [
+      { member: 'ran_hinokuma', tags: [] }
+    ]
+  },
+  {
+    name: '花火',
+    author: 'beco（騒音のない世界）',
+    youtube: '5tuhiMYovPY',
+    members: [
+      { member: 'ran_hinokuma', tags: [] }
+    ]
+  },
+  {
+    name: 'かえるのピアノ',
+    author: 'DOVA-SYNDROME',
+    youtube: 'bogzWYYz91U',
+    members: [
+      { member: 'ran_hinokuma', tags: [] }
+    ]
+  },
+  {
+    name: '急げ急げ！',
+    author: 'DOVA-SYNDROME',
+    youtube: 'RT0KL9ovwuw',
+    members: [
+      { member: 'ran_hinokuma', tags: ['料理配信'] }
+    ]
+  },
+  {
+    name: 'かけっこ競争',
+    author: 'DOVA-SYNDROME',
+    youtube: '-Df1VcAMjtM',
+    members: [
+      { member: 'ran_hinokuma', tags: ['料理配信'] }
+    ]
+  },
+  {
+    name: 'ひらひらり',
+    author: 'DOVA-SYNDROME',
+    youtube: 'D-IwLexmQh0',
+    members: [
+      { member: 'ran_hinokuma', tags: ['らん太郎死す'] }
+    ]
+  },
+  {
+    name: 'キミにあげる！',
+    author: 'MusMus',
+    youtube: '9bYPpAEgCzo',
+    members: [
+      { member: 'kuku_kazami', tags: [] }
+    ]
+  },
+  {
+    name: 'プラスチックアドベンチャー',
+    author: 'MusMus',
+    youtube: 'w4s60v2FFfs',
+    members: [
+      { member: 'kuku_kazami', tags: ['スパチャ返し'] }
+    ]
+  },
+  {
+    name: '楽しく愉快に',
+    author: 'DOVA-SYNDROME',
+    youtube: '723NjKyD_L8',
+    members: [
+      { member: 'izumi_yunohara', tags: [] }
+    ]
+  },
+  {
+    name: 'so sweet',
+    author: 'DOVA-SYNDROME',
+    youtube: 'Y7Zu2IruAq4',
+    members: [
+      { member: 'izumi_yunohara', tags: [] },
+      { member: 'uge_and', tags: [] }
+    ]
+  },
+  {
+    name: '昼下がり気分',
+    author: 'DOVA-SYNDROME',
+    youtube: 'p1O7tSN5_Co',
+    members: [
+      { member: 'izumi_yunohara', tags: [] }
+    ]
+  },
+  {
+    name: '夕餉の街並み',
+    author: 'MusMus',
+    youtube: 'Hn4Czfdmf5o',
+    members: [
+      { member: 'shiromiya_mimi', tags: [] },
+      { member: 'anko_kisaki', tags: [] }
+    ]
+  },
+  {
+    name: 'Mealtime_Rag',
+    author: 'PeriTune',
+    youtube: 'YWiUeQibq6k',
+    members: [
+      { member: 'shiromiya_mimi', tags: ['料理'] }
+    ]
+  },
+  {
+    name: 'いっしょに！',
+    author: '★本人',
+    youtube: 'CXz3SVvZiPc',
+    members: [
+      { member: 'shiromiya_mimi', tags: ['ED'] }
+    ]
+  },
+  {
+    name: '晴れた日は更新',
+    author: 'Music is VFR',
+    youtube: 'xO26nUocp-M',
+    members: [
+      { member: 'natsumi_hashiba', tags: [] }
+    ]
+  },
+  {
+    name: '魔女っ婆タヱさん',
+    author: 'MusMus',
+    youtube: 'bJxIo_beMjg',
+    members: [
+      { member: 'natsumi_hashiba', tags: [] }
+    ]
+  },
+  {
+    name: '古き良き日々',
+    author: 'MusMus',
+    youtube: 'OtPeKoNp6us',
+    members: [
+      { member: 'natsumi_hashiba', tags: [] }
+    ]
+  },
+  {
+    name: 'In That Mood',
+    author: 'Music is VFR',
+    youtube: 'VZOyCmiSMmI',
+    members: [
+      { member: 'natsumi_hashiba', tags: [] }
+    ]
+  },
+  {
+    name: '空白と静寂',
+    author: 'Music is VFR',
+    youtube: 'zf5vqokL6So',
+    members: [
+      { member: 'natsumi_hashiba', tags: [] }
+    ]
+  },
+  {
+    name: '春宵闇ニ咲ク',
+    author: 'MusMus',
+    youtube: 'b7OyyndTPVg',
+    members: [
+      { member: 'natsumi_hashiba', tags: ['朝配信'] }
+    ]
+  },
+  {
+    name: '真夏のレモネード',
+    author: 'MusMus',
+    youtube: 'JofDLAhBMf4',
+    members: [
+      { member: 'natsumi_hashiba', tags: ['収益化配信'] }
+    ]
+  },
+  {
+    name: 'ゆきうさぎ',
+    author: 'MusMus',
+    youtube: '2kWuQz9sdfI',
+    members: [
+      { member: 'charlotte_hnst', tags: ['Minecraft'] }
+    ]
+  },
+  {
+    name: 'Trick style',
+    author: 'DOVA-SYNDROME',
+    youtube: 'elZZpZCes48',
+    members: [
+      { member: 'rene_ryugasaki', tags: ['事件簿'] }
+    ]
+  },
+  {
+    name: '間抜けな行進曲',
+    author: 'DOVA-SYNDROME',
+    youtube: 'g58eY1th86Y',
+    members: [
+      { member: 'rene_ryugasaki', tags: [] }
+    ]
+  },
+  {
+    name: '残滓念',
+    author: 'DOVA-SYNDROME',
+    youtube: 'r65mQAq78No',
+    members: [
+      { member: 'rene_ryugasaki', tags: [] }
+    ]
+  },
+  {
+    name: 'Killing Party',
+    author: 'DOVA-SYNDROME',
+    youtube: '6kUUVGXcbW0',
+    members: [
+      { member: 'chrisshishio', tags: ['クリスチャンス'] }
+    ]
+  },
+  {
+    name: 'ぼーっと陽だまり',
+    author: 'Music is VFR',
+    youtube: 'Mx2fNRAD6oI',
+    members: [
+      { member: 'uge_and', tags: [] }
+    ]
+  },
+  {
+    name: '雪と子供',
+    author: 'MusMus',
+    youtube: 'fkdrPZPXu_o',
+    members: [
+      { member: 'uge_and', tags: [] },
+      { member: 'anko_kisaki', tags: [] }
+    ]
+  },
+  {
+    name: '強欲な娘',
+    author: 'beco（騒音のない世界）',
+    youtube: 'x_g0Y7bkwsI',
+    members: [
+      { member: 'uge_and', tags: ['OP'] }
+    ]
+  },
+  {
+    name: '冬の踊り子',
+    author: 'beco（騒音のない世界）',
+    youtube: 'kHZGsL8sV2Q',
+    members: [
+      { member: 'uge_and', tags: ['OP'] }
+    ]
+  },
+  {
+    name: 'どんぐりころころ',
+    author: 'beco（騒音のない世界）',
+    youtube: 'pepiUg_zXWs',
+    members: [
+      { member: 'uge_and', tags: ['AFK'] }
+    ]
+  },
+  {
+    name: 'なんということはない日常',
+    author: 'DOVA-SYNDROME',
+    youtube: 'Xj2LwGR8cGI',
+    members: [
+      { member: '_kanade_kanon', tags: [] }
+    ]
+  },
+  {
+    name: '電脳漂流記',
+    author: 'MusMus',
+    youtube: 'sqG_a1-c8f4',
+    members: [
+      { member: 'anko_kisaki', tags: [] }
+    ]
+  },
+  {
+    name: 'BT GIRLS',
+    author: 'MusMus',
+    youtube: '4AUQWE8uqqY',
+    members: [
+      { member: 'anko_kisaki', tags: [] },
+      { member: 'met_komori', tags: [] }
+    ]
   }
-] as MusicData[]
+]

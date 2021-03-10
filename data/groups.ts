@@ -1,55 +1,29 @@
-import { MemberKey } from 'app/data/members'
+export type GroupKey =
+  | 'animare_cafe'
+  | 'honey_strap'
+  | 'sugar_lyric'
+  | 'vtuber_apart'
 
-export type GroupData = {
+export type GroupDatum = {
+  key: GroupKey
   name: string
-  members: MemberKey[]
 }
 
-export const groupsData = [
+export const groupData : GroupDatum[] = [
   {
-    name: '有閑喫茶あにまーれ',
-    members: [
-      'haneru_inaba',
-      'ichika_souya',
-      'ran_hinokuma',
-      'kuku_kazami',
-      'izumi_yunohara',
-      'shiromiya_mimi',
-      'natsumi_hashiba',
-      'rui_seshima',
-      'hikari_hira'
-    ]
+    key: 'animare_cafe',
+    name: '有閑喫茶あにまーれ'
   },
   {
-    name: 'ハニーストラップ',
-    members: ['mico_hnst', 'patra_hnst', 'charlotte_hnst', 'mary_hnst']
+    key: 'honey_strap',
+    name: 'ハニーストラップ'
   },
   {
-    name: 'シュガーリリック',
-    members: ['rene_ryugasaki', 'anna_kojo', 'chrisshishio']
+    key: 'sugar_lyric',
+    name: 'シュガーリリック'
   },
   {
-    name: 'ブイアパ',
-    members: [
-      'uge_and',
-      '_kanade_kanon',
-      'anko_kisaki',
-      'met_komori',
-      'wat_huma'
-    ]
-  },
-  {
-    name: 'その他',
-    members: ['other']
-  },
-  {
-    name: '休止／引退',
-    members: [
-      'kuromu_inari',
-      'eli_hnst',
-      'hinako_umori',
-      'akane_haibara',
-      'camomi_camomi'
-    ]
+    key: 'vtuber_apart',
+    name: 'ブイアパ'
   }
-] as GroupData[]
+]
