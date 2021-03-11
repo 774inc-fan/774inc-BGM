@@ -225,14 +225,6 @@ export const musicData: MusicDaum[] = [
     ]
   },
   {
-    name: '急げ急げ！',
-    author: 'DOVA-SYNDROME',
-    youtube: 'RT0KL9ovwuw',
-    members: [
-      { member: 'ran_hinokuma', tags: ['料理配信'] }
-    ]
-  },
-  {
     name: 'かけっこ競争',
     author: 'DOVA-SYNDROME',
     youtube: '-Df1VcAMjtM',
