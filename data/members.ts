@@ -11,6 +11,9 @@ export type MemberKey =
   | 'natsumi_hashiba'
   | 'rui_seshima'
   | 'hikari_hira'
+  | 'rukako_oura'
+  | 'tirol0_0lorit'
+  | 'mia_konan'
   // ハニーストラップ
   | 'mico_hnst'
   | 'patra_hnst'
@@ -79,6 +82,21 @@ export const memberData : MemberDatum[] = [
     key: 'hikari_hira',
     group: 'animare_cafe',
     name: '飛良ひかり'
+  },
+  {
+    key: 'rukako_oura',
+    group: 'animare_cafe',
+    name: '大浦るかこ'
+  },
+  {
+    key: 'tirol0_0lorit',
+    group: 'animare_cafe',
+    name: '月野木ちろる'
+  },
+  {
+    key: 'mia_konan',
+    group: 'animare_cafe',
+    name: '湖南みあ'
   },
   // ハニーストラップ
   {
