@@ -50,7 +50,8 @@ export const musicData: MusicDaum[] = [
     author: 'DOVA-SYNDROME',
     youtube: 'SkQihFHiWt0',
     members: [
-      { member: 'ichika_souya', tags: [] }
+      { member: 'ichika_souya', tags: [] },
+      { member: 'met_komori', tags: [] }
     ]
   },
   {
@@ -473,6 +474,110 @@ export const musicData: MusicDaum[] = [
     members: [
       { member: 'anko_kisaki', tags: [] },
       { member: 'met_komori', tags: [] }
+    ]
+  },
+  {
+    name: 'ホワイトベル',
+    author: 'DOVA-SYNDROME',
+    youtube: 'CrzApeSovcg',
+    members: [
+      { member: 'anko_kisaki', tags: [] }
+    ]
+  },
+  {
+    name: 'キラリきらめく',
+    author: 'DOVA-SYNDROME',
+    youtube: '85zT7xyUk48',
+    members: [
+      { member: 'rui_seshima', tags: [] }
+    ]
+  },
+  {
+    name: 'かしこい猫ですけどなにか問題でもっ？',
+    author: 'DOVA-SYNDROME',
+    youtube: 'GUdoL7P56Mc',
+    members: [
+      { member: 'rui_seshima', tags: [] }
+    ]
+  },
+  {
+    name: 'リコーダービート',
+    author: 'DOVA-SYNDROME',
+    youtube: 'oDV2_FtsWmQ',
+    members: [
+      { member: 'haneru_inaba', tags: ['ツブナイ'] }
+    ]
+  },
+  {
+    name: 'プレゼントボックス',
+    author: 'DOVA-SYNDROME',
+    youtube: 'DUh_MoCHv_E',
+    members: [
+      { member: 'hikari_hira', tags: [] }
+    ]
+  },
+  {
+    name: '2:23 AM',
+    author: 'DOVA-SYNDROME',
+    youtube: '16Bj6aPi1A8',
+    members: [
+      { member: 'met_komori', tags: [] }
+    ]
+  },
+  {
+    name: '週末京都現実逃避',
+    author: 'DOVA-SYNDROME',
+    youtube: 'C1_NatQvewY',
+    members: [
+      { member: 'met_komori', tags: [] }
+    ]
+  },
+  {
+    name: '料理が作れそうな曲',
+    author: 'DOVA-SYNDROME',
+    youtube: 'qx9jEcOZlqI',
+    members: [
+      { member: 'ran_hinokuma', tags: [] }
+    ]
+  },
+  {
+    name: 'わくわく☆かわいい',
+    author: 'DOVA-SYNDROME',
+    youtube: '97XYVcolGXw',
+    members: [
+      { member: 'rene_ryugasaki', tags: [] }
+    ]
+  },
+  {
+    name: 'はりきっちゃう時のテーマ',
+    author: 'DOVA-SYNDROME',
+    youtube: '04wyv6F85KQ',
+    members: [
+      { member: 'rene_ryugasaki', tags: [] }
+    ]
+  },
+  {
+    name: '探偵事務所',
+    author: 'DOVA-SYNDROME',
+    youtube: 'fDtc6_c9VgQ',
+    members: [
+      { member: 'rene_ryugasaki', tags: [] }
+    ]
+  },
+  {
+    name: '間抜けな行進曲',
+    author: 'DOVA-SYNDROME',
+    youtube: 'g58eY1th86Y',
+    members: [
+      { member: 'rene_ryugasaki', tags: [] }
+    ]
+  },
+  {
+    name: '残滓念',
+    author: 'DOVA-SYNDROME',
+    youtube: 'r65mQAq78No',
+    members: [
+      { member: 'rene_ryugasaki', tags: [] }
     ]
   }
 ]
