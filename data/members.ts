@@ -3,8 +3,8 @@ import { GroupKey } from './groups'
 export type MemberKey =
   // 有閑喫茶あにまーれ
   | 'haneru_inaba'
-  | 'ichika_souya'
   | 'ran_hinokuma'
+  | 'ichika_souya'
   | 'kuku_kazami'
   | 'izumi_yunohara'
   | 'shiromiya_mimi'
@@ -18,8 +18,8 @@ export type MemberKey =
   | 'mary_hnst'
   // シュガーリリック
   | 'rene_ryugasaki'
-  | 'anna_kojo'
   | 'chrisshishio'
+  | 'anna_kojo'
   // ブイアパ
   | 'uge_and'
   | '_kanade_kanon'
@@ -41,14 +41,14 @@ export const memberData : MemberDatum[] = [
     name: '因幡はねる'
   },
   {
-    key: 'ichika_souya',
-    group: 'animare_cafe',
-    name: '宗谷いちか'
-  },
-  {
     key: 'ran_hinokuma',
     group: 'animare_cafe',
     name: '日ノ隈らん'
+  },
+  {
+    key: 'ichika_souya',
+    group: 'animare_cafe',
+    name: '宗谷いちか'
   },
   {
     key: 'kuku_kazami',
@@ -108,14 +108,14 @@ export const memberData : MemberDatum[] = [
     name: '龍ケ崎リン'
   },
   {
-    key: 'anna_kojo',
-    group: 'sugar_lyric',
-    name: '虎城アンナ'
-  },
-  {
     key: 'chrisshishio',
     group: 'sugar_lyric',
     name: '獅子王クリス'
+  },
+  {
+    key: 'anna_kojo',
+    group: 'sugar_lyric',
+    name: '虎城アンナ'
   },
   // ブイアパ
   {
