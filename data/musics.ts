@@ -149,6 +149,7 @@ export const musicData: MusicDaum[] = [
     author: 'DOVA-SYNDROME',
     youtube: '2KzkWWkPSpU',
     members: [
+      { member: 'haneru_inaba', tags: ['OP'] },
       { member: 'ichika_souya', tags: ['朝配信'] }
     ]
   },
@@ -537,6 +538,7 @@ export const musicData: MusicDaum[] = [
     author: 'DOVA-SYNDROME',
     youtube: '97XYVcolGXw',
     members: [
+      { member: 'ichika_souya', tags: [] },
       { member: 'rene_ryugasaki', tags: [] }
     ]
   },
@@ -557,19 +559,44 @@ export const musicData: MusicDaum[] = [
     ]
   },
   {
-    name: '間抜けな行進曲',
+    name: 'blue blue blue',
     author: 'DOVA-SYNDROME',
-    youtube: 'g58eY1th86Y',
+    youtube: '9oSBQLdw4-E',
     members: [
+      { member: 'haneru_inaba', tags: ['OP'] }
+    ]
+  },
+  {
+    name: '百花繚乱',
+    author: 'DOVA-SYNDROME',
+    youtube: 'b0Dp8R6io3k',
+    members: [
+      { member: 'ichika_souya', tags: [] },
       { member: 'rene_ryugasaki', tags: [] }
     ]
   },
   {
-    name: '残滓念',
+    name: 'おどれグロッケンシュピール',
     author: 'DOVA-SYNDROME',
-    youtube: 'r65mQAq78No',
+    youtube: 'vsUEQis1CAU',
     members: [
-      { member: 'rene_ryugasaki', tags: [] }
+      { member: 'natsumi_hashiba', tags: [] }
+    ]
+  },
+  {
+    name: 'ほんわかぷっぷー',
+    author: 'DOVA-SYNDROME',
+    youtube: 'YvX9stltotY',
+    members: [
+      { member: 'rui_seshima', tags: [] }
+    ]
+  },
+  {
+    name: '悪魔の悪戯',
+    author: 'DOVA-SYNDROME',
+    youtube: 'zMZW8VQ_1XI',
+    members: [
+      { member: 'mico_hnst', tags: [] }
     ]
   }
 ]
