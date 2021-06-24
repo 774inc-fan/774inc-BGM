@@ -598,5 +598,13 @@ export const musicData: MusicDaum[] = [
     members: [
       { member: 'mico_hnst', tags: [] }
     ]
+  },
+  {
+    name: 'ぷわぷわ風船',
+    author: 'DOVA-SYNDROME',
+    youtube: '3n2f654aIMo',
+    members: [
+      { member: 'ran_hinokuma', tags: ['OP'] }
+    ]
   }
 ]
